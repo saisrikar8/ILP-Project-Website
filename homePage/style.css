@@ -1,0 +1,99 @@
+@font-face {
+    font-family: rough_font;
+    src: url("../RubikBurned-Regular.ttf");
+}
+@font-face {
+    font-family: write_font;
+    src: url("../FrederickatheGreat-Regular.ttf");
+}
+@font-face {
+    font-family: sfpro;
+    src: url("../SFPRODISPLAYREGULAR.OTF");
+}
+@keyframes fadeIn {
+    0% {opacity: 0;
+        transform: translateY(20vh);
+        visibility: hidden;
+        transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+        will-change: opacity, visibility;}
+    100% {opacity: 1;
+        transform: none;
+        visibility: visible;}
+}
+*{
+    scroll-behavior: smooth;
+}
+.title1{
+    font-family: rough_font;
+    font-size:45px;
+    text-align: center;
+    animation: fadeIn 3s;
+    color:antiquewhite;
+}
+.title-wrap1{
+    background-color: rgb(0, 140, 255);
+    padding-block: 37vh;
+    padding-inline: 50vh;
+    text-align:center;
+}
+.title2{
+    font-family: write_font;
+    font-size: 25px;
+    animation: fadeIn 5s;
+    text-align: center;
+}
+.title-button{
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: sfpro;
+    border: none;
+    font-size: 15px;
+}
+.title-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    animation: "fadeIn 6s"
+  }
+  
+.title-button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.title-button:hover span {
+    padding-right: 25px;
+    text-decoration: underline;
+  }
+  
+.title-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.swal-text{
+    font-family: sfpro;
+}
+.swal-title{
+    font-family: sfpro;
+}
+.paragraph{
+    font-family: sfpro;
+}
+h3, h4{
+    font-family: write_font;
+}
+.body{
+    display: flex;
+    justify-content: space-evenly;
+}
+.body video{
+    width: 500px;
+    height: auto;
+}
