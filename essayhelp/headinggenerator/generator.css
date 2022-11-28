@@ -1,0 +1,81 @@
+@font-face {
+    font-family: text_font;
+    src: url("./SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+    font-family: heading_font;
+    src: url("./FrederickatheGreat-Regular.ttf");
+}
+.textInput{
+    border-radius: 10px;
+    height: 20px;
+    width: 200px;
+}
+*{
+    font-family: text_font;
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: heading_font;
+}
+.button {
+    background-color: rgb(3, 71, 230);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: 3px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.938);
+  }
+  
+  .button:active {
+    background-color: rgb(54, 103, 217);;
+    box-shadow: 0 1px rgb(60, 60, 60);
+    transform: translateY(4px);
+  }
+  a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: darkcyan;
+}
+.title-button{
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: sfpro;
+    border: none;
+    font-size: 15px;
+}
+.title-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    animation: "fadeIn 6s"
+  }
+  
+.title-button span:before {
+    content: '<<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    text-align: left;
+  }
+  
+.title-button:hover span {
+    margin-left: 25px;
+    text-decoration: underline;
+  }
+  
+.title-button:hover span:before {
+    opacity: 1;
+    right: 0;
+  }
