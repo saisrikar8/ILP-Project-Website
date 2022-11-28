@@ -1,0 +1,127 @@
+@font-face {
+    font-family: write_font;
+    src: url("../THOMS/FrederickatheGreat-Regular.ttf");
+}
+@font-face {
+    font-family: sfpro;
+    src: url("../THOMS/SFPRODISPLAYREGULAR.OTF");
+}
+.heading{
+    background-image: url("https://orion-uploads.openroadmedia.com/sm_4ded1f3c1f73-tkam-reread.jpg");
+    width: 100vw;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+}
+h1 mark span{
+    font-size: 40px;
+    font-family: write_font;
+}
+.intro figure img{
+    width: 100px;
+    height:auto;
+}
+*{
+    font-family: sfpro;
+}
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+}
+.intro figure figcaption{
+    width: 200px;
+    text-align: center;
+}
+p{
+    text-indent: 50px;
+    text-align:justify;
+}
+h2{
+    text-align: center;
+    font-family: write_font;
+}
+.link-button{
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: sfpro;
+    border: none;
+    font-size: 15px;
+}
+.link-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    animation: "fadeIn 6s"
+  }
+  
+.link-button span:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.5s;
+  }
+  
+.link-button:hover span {
+    padding-right: 25px;
+    text-decoration: underline;
+  }
+  
+.link-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+a{
+    color: blue;
+    text-decoration: none;
+}
+a:hover{
+    color: darkcyan;
+}
+.title-button{
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: sfpro;
+    border: none;
+    font-size: 15px;
+}
+.title-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    animation: "fadeIn 6s"
+  }
+  
+.title-button span:before {
+    content: '<<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    text-align: left;
+  }
+  
+.title-button:hover span {
+    margin-left: 25px;
+    text-decoration: underline;
+  }
+  
+.title-button:hover span:before {
+    opacity: 1;
+    right: 0;
+  }
+#tabList{
+    height: 400px;
+}
+
+video{
+    height: 200px;
+    width: auto;
+  }

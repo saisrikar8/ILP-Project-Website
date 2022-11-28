@@ -1,0 +1,77 @@
+@font-face {
+    font-family: sfpro;
+    src: url("../SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+    font-family: write_font;
+    src: url("../FrederickatheGreat-Regular.ttf");
+}
+.title-button{
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: sfpro;
+    border: none;
+    font-size: 15px;
+    color: blue;
+    text-decoration: none;
+}
+.title-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    animation: "fadeIn 6s"
+  }
+  
+.title-button span:before {
+    content: '<<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    text-align: left;
+  }
+  
+.title-button:hover span {
+    margin-left: 25px;
+    text-decoration: underline;
+  }
+  
+.title-button:hover span:before {
+    opacity: 1;
+    right: 0;
+  }
+
+*{
+    font-family: sfpro;
+}
+#links{
+  display: flex;
+  justify-content: space-evenly;
+}
+#links a{
+  color: black;
+  text-decoration: none;
+}
+.thoms{
+  width: 150px;
+  text-align: center;
+}
+.tkam{
+  width: 150px;
+  text-align: center;
+}
+#links div{
+  text-align: center;
+}
+figcaption{
+  width: 300px;
+}
+#links div:hover{
+  background-color: #ccc;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
